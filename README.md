@@ -25,7 +25,7 @@ batch-related design matrix columns.
 
 ```r
 # Install from GitHub
-devtools::install_github("yourusername/COBRA")
+devtools::install_github("wonlab-healthstat/COBRA")
 ```
 
 ## Quick Start
@@ -46,10 +46,3 @@ res$adj            # corrected expression matrix
 res$pseudocell     # estimated cell-type labels
 res$diagnostics$elbow_res$elbow_plot   # elbow diagnostic plot
 ```
-
-## Citation
-
-If you use COBRA in your research, please cite:
-
-> Seo, S. *et al.* (2026). COBRA: batch effect correction for
-> single-cell RNA-seq via orthogonal projection. *In preparation*.
