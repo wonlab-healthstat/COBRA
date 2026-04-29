@@ -1,0 +1,30 @@
+Package: COBRA
+Type: Package
+Title: COrrection of BAtch Effect for Single-Cell RNA-Seq Data
+Version: 0.2.0
+Authors@R: person("Sujin", "Seo", role = c("aut", "cre"),
+                  email = "sujin91kr@gmail.com")
+Description: Removes unwanted batch variation from single-cell RNA-seq
+    expression matrices while preserving biological signal. Batch effects
+    are estimated via orthogonal projection of batch-related design matrix
+    columns after partialling out biological covariates. When cell-type
+    annotations are unavailable, pseudo-cell types are inferred
+    automatically through iterative clustering on PCA-reduced space with
+    elbow-based dimensionality selection.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    ClusterR,
+    ggplot2,
+    irlba,
+    MASS,
+    Matrix,
+    Rfast
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+URL: https://github.com/wonlab-healthstat/COBRA
+BugReports: https://github.com/wonlab-healthstat/COBRA/issues
